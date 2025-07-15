@@ -9,7 +9,7 @@ const listItems = [
 ];
 export function LandingPage() {
   return (
-    <div className="   w-full h-full flex max-md:flex-col   justify-center  items-center  gap-4 container mx-auto ">
+    <div className="   w-full h-full flex max-md:flex-col   justify-center  items-center  gap-8 container mx-auto ">
       <section className=" text-white w-1/2 min-w-1/2  flex justify-center items-center ">
         <img
           src={Logo}

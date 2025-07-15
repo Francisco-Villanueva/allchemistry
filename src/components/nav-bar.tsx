@@ -6,8 +6,8 @@ export function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const halfScreen = window.innerHeight / 2;
-      setShowLogo(window.scrollY > halfScreen);
+      const screenHeight = window.innerHeight;
+      setShowLogo(window.scrollY > screenHeight);
     };
 
     window.addEventListener("scroll", handleScroll);
