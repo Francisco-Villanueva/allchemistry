@@ -28,7 +28,7 @@ export function AboutUs() {
     },
   ];
   return (
-    <section id="about-us" className=" flex flex-col gap-10">
+    <section id="about-us" className=" flex flex-col gap-10  size-full ">
       <div className="flex flex-col items-center gap-8 container  mx-auto  p-4">
         <h1 className="font-bold uppercase text-lg">Nuesta Historia</h1>
         <p className="w-2/3 text-lg ">

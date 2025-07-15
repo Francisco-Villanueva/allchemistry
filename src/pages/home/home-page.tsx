@@ -17,7 +17,7 @@ function SectionPage({
   return (
     <section
       id={id}
-      className={`h-[100vh] w-full flex justify-center items-center ${className} `}
+      className={`h-[100vh] min-h-[100vh] w-full flex justify-center items-center  ${className} `}
     >
       {children}
     </section>
@@ -26,7 +26,7 @@ function SectionPage({
 
 export function HomePage() {
   return (
-    <section className="w-[100vw]  relative overflow-x-hidden">
+    <section className="w-[100vw]  relative overflow-x-hidden flex flex-col ">
       <img
         id="water-image"
         src={LandingImg}
@@ -51,10 +51,8 @@ export function HomePage() {
         id="about"
         className="bg-gradient-to-b from-gray-700 to-gray-800"
       >
-        <div className="   w-full h-full flex justify-center items-center container mx-auto   ">
-          <section className="">
-            <AboutUs />
-          </section>
+        <div className="  size-full   container mx-auto  py-20 ">
+          <AboutUs />
         </div>
       </SectionPage>
 
@@ -62,12 +60,11 @@ export function HomePage() {
         id="products"
         className="bg-gradient-to-b from-gray-800 to-gray-900"
       >
-        <div className="   w-full h-full justify-center items-center    container mx-auto  ">
-          <section className="flex-grow  w-full h-full ">
-            <ProductList />
-          </section>
+        <div className="   flex-grow  size-full    container mx-auto py-20  ">
+          <ProductList />
         </div>
       </SectionPage>
+
       <Footer />
     </section>
   );

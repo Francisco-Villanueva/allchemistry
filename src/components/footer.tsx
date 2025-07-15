@@ -1,31 +1,65 @@
 export function Footer() {
   return (
-    <footer className="h-[10vh] bg-gray-900  flex items-center justify-between px-8">
-      <div className="text-lg font-bold">
-        {" "}
-        <h1 className="font-bold uppercase text-lg">AllChemistry</h1>
+    <footer className="bg-gray-900 text-gray-300 p-10 flex flex-col md:flex-row md:justify-between md:items-start gap-4 text-sm">
+      <div>
+        <h1 className="font-bold uppercase text-lg text-white">AllChemistry</h1>
+        <p className="mt-2">Pedro Pico 445 - Bahía Blanca</p>
+        <p>Horarios:</p>
+        <p>Lunes a Viernes: 08:00 AM - 17:00 PM</p>
+        <p>Sábados: 08:00 AM - 12:00 PM</p>
       </div>
-      <nav>
-        <ul className="flex space-x-4">
-          <li>
-            <a href="#about" className="hover:underline">
-              Acerca de
-            </a>
-          </li>
-          <li>
-            <a href="#services" className="hover:underline">
-              Servicios
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="hover:underline">
-              Contacto
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div className="text-sm">
-        &copy; {new Date().getFullYear()} Todos los derechos reservados.
+
+      <div>
+        <h2 className="font-semibold text-white">Contacto</h2>
+        <p>
+          Mail:{" "}
+          <a href="mailto:allchemistrybb@gmail.com" className="hover:underline">
+            allchemistrybb@gmail.com
+          </a>
+        </p>
+        <p>
+          Teléfono:{" "}
+          <a href="tel:+5492915354645" className="hover:underline">
+            +54 9 291-535-4645
+          </a>
+        </p>
+        <p>
+          Instagram:{" "}
+          <a
+            href="https://www.instagram.com/allchemistry.bb"
+            target="_blank"
+            className="hover:underline"
+          >
+            allchemistry.bb
+          </a>
+        </p>
+        <p>
+          Facebook:{" "}
+          <a
+            href="https://www.facebook.com/Allchemistry"
+            target="_blank"
+            className="hover:underline"
+          >
+            Allchemistry
+          </a>
+        </p>
+      </div>
+
+      <div className="md:text-right">
+        <nav className="flex flex-col gap-1">
+          <a href="#about" className="hover:underline">
+            Acerca de
+          </a>
+          <a href="#services" className="hover:underline">
+            Servicios
+          </a>
+          <a href="#contact" className="hover:underline">
+            Contacto
+          </a>
+        </nav>
+        <p className="mt-4">
+          &copy; {new Date().getFullYear()} Todos los derechos reservados.
+        </p>
       </div>
     </footer>
   );

@@ -2,27 +2,34 @@ import type { Product } from "../../../utils/products";
 
 const ProductCard = ({ product }: { product: Product }) => {
   return (
-    <div className="flex flex-col  h-full  gap-4 overflow-auto">
-      <div className="flex flex-col gap-4 h-[180px]">
-        <h2 className="text-2xl font-semibold">{product.title}</h2>
-        <p>{product.description}</p>
+    <div
+      className={`flex   h-full w-3/4 mx-auto  gap-4 overflow-auto  rounded-xl p- bg-gray-800 `}
+    >
+      <div className="flex flex-col justify-center items-center  gap-4 w-[250px] min-w-[250px] max-w-[250px]">
+        <img
+          src={product.image}
+          alt={product.title}
+          className="size-full object-cover rounded-lg"
+        />
       </div>
 
-      <div>
-        <h4>Usos habituales:</h4>
-        <ul>
-          {product.uses.map((use, idx) => (
-            <li key={idx}>{use}</li>
-          ))}
-        </ul>
-      </div>
-
-      <div>
+      <div className={`flex-grow  flex flex-col gap-4 p-4 `}>
+        <h2 className="text-xl uppercase font-semibold">{product.title}</h2>
+        <hr />
+        <p className="font-light">{product.description}</p>
         <h4>Presentaciones:</h4>
         <p>{product.presentations.join(" - ")} (Bidón PVC / PET)</p>
       </div>
 
-      <div>
+      {/* <section>
+        <div>
+          <h4>Usos habituales:</h4>
+          <ul>
+            {product.uses.map((use, idx) => (
+              <li key={idx}>{use}</li>
+            ))}
+          </ul>
+        </div>
         {product.technical && (
           <>
             <h4>Información técnica:</h4>
@@ -35,7 +42,7 @@ const ProductCard = ({ product }: { product: Product }) => {
             </div>
           </>
         )}
-      </div>
+      </section> */}
     </div>
   );
 };

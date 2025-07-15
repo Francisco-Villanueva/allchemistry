@@ -1,6 +1,10 @@
+import ImageTridestilada from "../assets/products/tridestilada.jpg";
+import ImageBidestilada from "../assets/products/bidestilada.jpg";
+import ImageDesmineralizada from "../assets/products/desmineralizada.jpg";
 export type Product = {
   title: string;
   description: string;
+  image: string;
   uses: string[];
   presentations: string[];
   technical?: Record<string, string>;
@@ -17,6 +21,7 @@ export const products: Product[] = [
       "Baterías y radiadores",
     ],
     presentations: ["1L", "2L", "5L", "10L", "20L"],
+    image: ImageDesmineralizada,
   },
   {
     title: "Agua Bidestilada",
@@ -39,6 +44,7 @@ export const products: Product[] = [
       "Nitrógeno amoniacal": "< 0.1 PPM",
       Dureza: "< 2 PPM",
     },
+    image: ImageBidestilada,
   },
   {
     title: "Agua Tridestilada",
@@ -49,6 +55,7 @@ export const products: Product[] = [
       "Industria farmacéutica y biotecnológica",
       "Aplicaciones donde se requiere agua sin trazas de impurezas.",
     ],
+    image: ImageTridestilada,
     presentations: ["1L", "2L", "5L", "10L", "20L"],
     technical: {
       "Conductividad Eléctrica": "< 1.0 µS/cm",
