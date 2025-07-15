@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Detergente Línea Premium",
+    "imagen": "https://www.quimicahurlingham.com.ar/wp-content/uploads/2024/01/IMG_20240119_100741-PhotoRoom.png-PhotoRoom-1.png"
+  },
+  {
+    "id": 2,
+    "name": "Lavavajillas",
+    "imagen": "https://www.quimicahurlingham.com.ar/wp-content/uploads/2024/01/IMG_20240119_100741-PhotoRoom.png-PhotoRoom-1.png"
+  },
+  {
+    "id": 3,
+    "name": "Limpiadores Líquidos",
+    "imagen": "https://www.quimicahurlingham.com.ar/wp-content/uploads/2024/01/IMG_20240119_100741-PhotoRoom.png-PhotoRoom-1.png"
+  },
+  {
+    "id": 4,
+    "name": "Ceras",
+    "imagen": "https://www.quimicahurlingham.com.ar/wp-content/uploads/2024/01/IMG_20240119_100741-PhotoRoom.png-PhotoRoom-1.png"
+  },
+  {
+    "id": 5,
+    "name": "Lampazol",
+    "imagen": "https://www.quimicahurlingham.com.ar/wp-content/uploads/2024/01/IMG_20240119_100741-PhotoRoom.png-PhotoRoom-1.png"
+  },
+  {
+    "id": 6,
+    "name": "Suavizante para ropa",
+    "imagen": "https://www.quimicahurlingham.com.ar/wp-content/uploads/2024/01/IMG_20240119_100741-PhotoRoom.png-PhotoRoom-1.png"
+  },
+  {
+    "id": 7,
+    "name": "Jabón Líquido para ropa",
+    "imagen": "https://www.quimicahurlingham.com.ar/wp-content/uploads/2024/01/IMG_20240119_100741-PhotoRoom.png-PhotoRoom-1.png"
+  },
+  {
+    "id": 8,
+    "name": "Fragancia para el hogar",
+    "imagen": "https://www.quimicahurlingham.com.ar/wp-content/uploads/2024/01/IMG_20240119_100741-PhotoRoom.png-PhotoRoom-1.png"
+  },
+  {
+    "id": 9,
+    "name": "Agua Destilada",
+    "imagen": "https://www.quimicahurlingham.com.ar/wp-content/uploads/2024/01/IMG_20240119_100741-PhotoRoom.png-PhotoRoom-1.png"
+  },
+  {
+    "id": 10,
+    "name": "Destapacañerías",
+    "imagen": "https://www.quimicahurlingham.com.ar/wp-content/uploads/2024/01/IMG_20240119_100741-PhotoRoom.png-PhotoRoom-1.png"
+  },
+  {
+    "id": 11,
+    "name": "Limpiadores grasos",
+    "imagen": "https://www.quimicahurlingham.com.ar/wp-content/uploads/2024/01/IMG_20240119_100741-PhotoRoom.png-PhotoRoom-1.png"
+  },
+  {
+    "id": 12,
+    "name": "Limpiadores específicos",
+    "imagen": "https://www.quimicahurlingham.com.ar/wp-content/uploads/2024/01/IMG_20240119_100741-PhotoRoom.png-PhotoRoom-1.png"
+  },
+  {
+    "id": 13,
+    "name": "Lavandina",
+    "imagen": "https://www.quimicahurlingham.com.ar/wp-content/uploads/2024/01/IMG_20240119_100741-PhotoRoom.png-PhotoRoom-1.png"
+  }
+]
