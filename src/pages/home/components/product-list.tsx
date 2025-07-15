@@ -3,9 +3,11 @@ import ProductCard from "./product-card";
 
 export function ProductList() {
   return (
-    <div className="  w-full  h-full  flex flex-col gap-10  ">
-      <section className="w-full text-center">
-        <p className="text-3xl uppercase font-anton ">Nuestors productos</p>
+    <div className="  w-full  h-full  flex flex-col gap-20  ">
+      <section className="w-full text-center space-y-2">
+        <p className="text-6xl uppercase font-anton ">
+          Nuestors productos y servicios
+        </p>
         <p className="text-gray-400">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
           corporis rem officia consequatur dolores labore nulla quibusdam

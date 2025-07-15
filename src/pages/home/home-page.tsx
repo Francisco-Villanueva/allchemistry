@@ -17,7 +17,7 @@ function SectionPage({
   return (
     <section
       id={id}
-      className={`h-[100vh] min-h-[100vh] w-full flex justify-center items-center  ${className} `}
+      className={`h-[100vh] min-h-[100vh] w-full flex justify-center items-center pt-[10vh] ${className} `}
     >
       {children}
     </section>
@@ -51,7 +51,7 @@ export function HomePage() {
         id="about"
         className="bg-gradient-to-b from-gray-700 to-gray-800"
       >
-        <div className="  size-full   container mx-auto  py-20 ">
+        <div className="  size-full   container mx-auto   ">
           <AboutUs />
         </div>
       </SectionPage>
@@ -60,7 +60,7 @@ export function HomePage() {
         id="products"
         className="bg-gradient-to-b from-gray-800 to-gray-900"
       >
-        <div className="   flex-grow  size-full    container mx-auto py-20  ">
+        <div className="   flex-grow  size-full    container mx-auto ">
           <ProductList />
         </div>
       </SectionPage>

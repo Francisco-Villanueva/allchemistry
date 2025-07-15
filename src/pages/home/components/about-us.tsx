@@ -28,10 +28,12 @@ export function AboutUs() {
     },
   ];
   return (
-    <section id="about-us" className=" flex flex-col gap-10  size-full ">
+    <section id="about-us" className=" flex flex-col gap-10  size-full  ">
       <div className="flex flex-col items-center gap-8 container  mx-auto  p-4">
-        <h1 className="font-bold uppercase text-lg">Nuesta Historia</h1>
-        <p className="w-2/3 text-lg ">
+        <p className="font-bold uppercase text-5xl font-anton">
+          Nuesta Historia
+        </p>
+        <p className="w-2/3 text-lg text-center ">
           Somos una empresa familiar con más de 25 años de trayectoria, dedicada
           a ofrecer productos de alta calidad y un servicio personalizado.
           Nacimos en Bahía Blanca en 1997 y desde entonces hemos crecido de
@@ -50,7 +52,6 @@ export function AboutUs() {
           ))}
         </div>
       </div>
-      <ProductsCarousel />
       <section className="container  mx-auto grid grid-cols-3">
         {MVV.map((item) => (
           <article
@@ -65,6 +66,7 @@ export function AboutUs() {
           </article>
         ))}
       </section>
+      <ProductsCarousel />
     </section>
   );
 }
