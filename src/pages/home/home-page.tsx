@@ -17,7 +17,7 @@ function SectionPage({
   return (
     <section
       id={id}
-      className={`h-[100vh] w-full flex justify-center items-center ${className} relative`}
+      className={`h-[100vh] w-full flex justify-center items-center ${className} `}
     >
       {children}
     </section>
@@ -26,7 +26,7 @@ function SectionPage({
 
 export function HomePage() {
   return (
-    <section className="h-[300vh] w-[100vw] relative ">
+    <section className="w-[100vw]  relative overflow-x-hidden">
       <img
         id="water-image"
         src={LandingImg}
@@ -38,10 +38,9 @@ export function HomePage() {
         id="home"
         className="bg-gradient-to-b from-50% to-100% to-gray-700"
       >
-        <div className="   w-full h-full flex flex-col justify-center items-center relative container mx-auto ">
+        <div className="   w-full h-full flex flex-col justify-center items-center  container mx-auto ">
           <section className="h-full  w-full flex flex-col justify-center items-center text-white ">
             <img src={Logo} alt="allchemistry-logo" className="w-[40vw]  " />
-
             <p className="text-xl uppercase  ">
               Destilada con ciencia, respaldada con trayectoria
             </p>
