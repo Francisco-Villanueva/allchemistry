@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 p-10 flex flex-col">
+    <footer className="bg-gray-950 text-gray-300 p-10 flex flex-col">
       <h1 className="font-bold uppercase text-lg text-white">AllChemistry</h1>
       <section className="w-full flex flex-col md:flex-row md:justify-between md:items-start gap-4 text-sm">
         <div>
