@@ -3,9 +3,9 @@ import type { Product } from "../../../utils/products";
 const ProductCard = ({ product }: { product: Product }) => {
   return (
     <div
-      className={`flex   h-full w-3/4 mx-auto  gap-4 overflow-auto  rounded-xl p- bg-gray-800 `}
+      className={`flex  max-md:flex-col  h-full md:w-3/4 mx-auto  gap-4 overflow-auto  rounded-xl p- bg-gray-800 `}
     >
-      <div className="flex flex-col justify-center items-center  gap-4 w-[250px] min-w-[250px] max-w-[250px]">
+      <div className="flex flex-col justify-center items-center  gap-4 md:w-[250px] md:min-w-[250px] md:max-w-[250px] ">
         <img
           src={product.image}
           alt={product.title}

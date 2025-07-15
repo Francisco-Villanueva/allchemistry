@@ -7,8 +7,8 @@ import {
 import FaqImaga from "@/assets/faq.webp";
 export function FaqSection() {
   return (
-    <section className=" flex  gap-10 container mx-auto ">
-      <div className="w-1/2 flex flex-col   text-white gap-8">
+    <section className=" flex max-md:flex-col  gap-10 container mx-auto ">
+      <div className="md:w-1/2 flex flex-col   text-white gap-8">
         <h2 className="text-3xl font-anton uppercase font-semibold ">
           Preguntas Frecuentes
         </h2>
@@ -18,7 +18,7 @@ export function FaqSection() {
         </p>
         <img src={FaqImaga} className="w-5/6 mx-auto" />
       </div>
-      <div className="w-1/2">
+      <div className="md:w-1/2">
         <AccordionQuestions />
       </div>
     </section>
