@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Logo from "../assets/logo.png";
 
 export function Navbar() {
   const [showLogo, setShowLogo] = useState(false);
@@ -21,9 +20,9 @@ export function Navbar() {
     <nav className="h-[8vh] w-full top-0 text-white flex justify-center items-center fixed z-4">
       <div className="flex justify-between items-center container w-full">
         <img
-          src={Logo}
+          src={"/nav-bar.png"}
           alt="allchemistry-logo"
-          className={`w-24 object-cover transition-all duration-300 ${
+          className={`w-30 object-cover transition-all duration-300 ${
             showLogo ? "opacity-100" : "opacity-0"
           }`}
         />
@@ -38,7 +37,7 @@ export function Navbar() {
           </li>
           <li>
             <a href="#about" className="hover:underline">
-              Nosotors
+              Nosotros
             </a>
           </li>
           <li>

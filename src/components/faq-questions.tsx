@@ -83,8 +83,7 @@ function AccordionQuestions() {
       <AccordionItem value="item-6">
         <AccordionTrigger>¿Qué formas de pago aceptan?</AccordionTrigger>
         <AccordionContent>
-          Aceptamos efectivo y transferencias bancarias o de billeteras
-          virtuales.
+          Aceptamos efectivo, transferencias, E-chqs y cheques físicos.
         </AccordionContent>
       </AccordionItem>
 
@@ -93,9 +92,8 @@ function AccordionQuestions() {
           ¿Cuál es el horario de atención o entrega?
         </AccordionTrigger>
         <AccordionContent>
-          Atendemos de lunes a viernes de 08:00 a 17:00 hs, y los sábados de
-          08:00 a 17:00 hs. Las entregas también se coordinan dentro de ese
-          rango horario.
+          Nuestro horario de atención es de LUNES A VIERNES: 8:00 a 17:00 hrs y
+          SÁBADOS: 8:00 a 12:00 hrs
         </AccordionContent>
       </AccordionItem>
 
@@ -105,7 +103,7 @@ function AccordionQuestions() {
         </AccordionTrigger>
         <AccordionContent>
           Podés establecer comunicación directa con nosotros a través de
-          Whatsapp.
+          WhatsApp.
         </AccordionContent>
       </AccordionItem>
     </Accordion>

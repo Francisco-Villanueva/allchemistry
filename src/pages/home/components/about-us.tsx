@@ -18,13 +18,13 @@ export function AboutUs() {
       icon: <Lightbulb className="size-16 max-md:size-8" />,
       title: "Visión",
       description:
-        "Ser una empresa reconocida en Bahía Blanca y la región por nuestra seriedad, compromiso y la calidad constante de nuestros productos. Aspiramos a construir relaciones duraderas, basadas en el cumplimiento, la agilidad y una atención cercana",
+        "Ser una empresa reconocida en Bahía Blanca y la región por nuestra seriedad, compromiso y la calidad constante de nuestros productos. Aspiramos a construir relaciones duraderas, basadas en el cumplimiento, la agilidad y una atención cercana.",
     },
     {
       icon: <HandHeart className="size-16 max-md:size-8" />,
       title: "Valores",
       description:
-        "Somos una empresa que se destaca por su dedicación y compromiso, y nuestra forma de trabajar está basada en principios sólidos que impulsan el crecimiento continuo:",
+        "Somos una empresa que se destaca por su dedicación y compromiso, y nuestra forma de trabajar está basada en principios sólidos que impulsan el crecimiento continuo.",
     },
   ];
   return (
@@ -33,7 +33,7 @@ export function AboutUs() {
       className=" flex flex-col items-center  gap-10  size-full  "
     >
       <p className="font-bold uppercase text-6xl max-md:text-4xl font-anton text-center">
-        Nuesta Historia
+        Nuestra Historia
       </p>
       <section className="flex max-md:flex-col max-md:items-center gap-8   w-full max-md:w-[90%]">
         <div className="md:w-1/2 md:min-w-1/2   flex items-center">

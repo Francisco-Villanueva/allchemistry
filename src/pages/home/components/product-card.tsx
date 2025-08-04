@@ -1,5 +1,14 @@
+import { Button } from "@/components/ui/button";
 import type { Product } from "../../../utils/products";
-
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { ArrowLeftFromLine } from "lucide-react";
 const ProductCard = ({ product }: { product: Product }) => {
   return (
     <div
@@ -18,31 +27,35 @@ const ProductCard = ({ product }: { product: Product }) => {
         <hr />
         <p className="font-light">{product.description}</p>
         <h4>Presentaciones:</h4>
-        <p>{product.presentations.join(" - ")} (Bidón PVC / PET)</p>
+        <p>
+          {product.presentations.join(" - ")} ({product.presentationType})
+        </p>
       </div>
 
-      {/* <section>
-        <div>
-          <h4>Usos habituales:</h4>
-          <ul>
-            {product.uses.map((use, idx) => (
-              <li key={idx}>{use}</li>
-            ))}
-          </ul>
-        </div>
-        {product.technical && (
-          <>
-            <h4>Información técnica:</h4>
-            <div>
-              {Object.entries(product.technical).map(([key, value], idx) => (
-                <li key={idx}>
-                  <strong>{key}:</strong> {value}
-                </li>
-              ))}
-            </div>
-          </>
-        )}
-      </section> */}
+      <Sheet>
+        <SheetTrigger asChild>
+          <Button>
+            <ArrowLeftFromLine />
+          </Button>
+        </SheetTrigger>
+        <SheetContent>
+          <SheetHeader>
+            <SheetTitle>{product.title}</SheetTitle>
+            <SheetDescription>{product.description}</SheetDescription>
+          </SheetHeader>
+          <section className=" flex-1  p-4">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum aspernatur iste nulla natus repellendus. In beatae
+              alias est quisquam? Nulla, sit? Expedita voluptates necessitatibus
+              dignissimos enim totam molestias dolorem cupiditate hic? Quas
+              dolorum nesciunt molestiae. Natus, saepe quas quisquam id
+              accusamus corrupti debitis maiores dolorem possimus ea, odio
+              nostrum itaque.
+            </p>
+          </section>
+        </SheetContent>
+      </Sheet>
     </div>
   );
 };

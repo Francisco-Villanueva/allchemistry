@@ -1,3 +1,8 @@
+import { ContactButton } from "./ContactButton";
+import { IntagramIcon } from "./icons/IntagramIcon";
+import { FacebookIcon } from "./icons/FacebookIcon";
+import EmailIcon from "./icons/EmailIcon";
+
 export function Footer() {
   return (
     <footer className="bg-gray-950 text-gray-300 p-10 flex flex-col">
@@ -10,43 +15,25 @@ export function Footer() {
           <p>Sábados: 08:00 AM - 12:00 PM</p>
         </div>
 
-        <div>
-          <h2 className="font-semibold text-white">Contacto</h2>
-          <p>
-            Mail:{" "}
-            <a
-              href="mailto:allchemistrybb@gmail.com"
-              className="hover:underline"
-            >
-              allchemistrybb@gmail.com
-            </a>
-          </p>
-          <p>
-            Teléfono:{" "}
-            <a href="tel:+5492915354645" className="hover:underline">
-              +54 9 291-535-4645
-            </a>
-          </p>
-          <p>
-            Instagram:{" "}
-            <a
-              href="https://www.instagram.com/allchemistry.bb"
-              target="_blank"
-              className="hover:underline"
-            >
-              allchemistry.bb
-            </a>
-          </p>
-          <p>
-            Facebook:{" "}
-            <a
-              href="https://www.facebook.com/Allchemistry"
-              target="_blank"
-              className="hover:underline"
-            >
-              Allchemistry
-            </a>
-          </p>
+        <div className="flex items-center gap-2">
+          <a href="mailto:allchemistrybb@gmail.com" className="hover:underline">
+            <EmailIcon />
+          </a>
+          <ContactButton phoneNumber="+5492915354645" />
+          <a
+            href="https://www.instagram.com/allchemistry.bb"
+            target="_blank"
+            className="hover:underline"
+          >
+            <IntagramIcon />
+          </a>
+          <a
+            href="https://www.facebook.com/Allchemistry"
+            target="_blank"
+            className="hover:underline"
+          >
+            <FacebookIcon />
+          </a>
         </div>
 
         <div className="md:text-right">

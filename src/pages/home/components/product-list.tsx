@@ -6,7 +6,7 @@ export function ProductList() {
     <div className="  w-full  h-full  flex flex-col gap-20  ">
       <section className="w-full text-center space-y-2">
         <p className="text-6xl max-md:text-4xl uppercase font-anton ">
-          Nuestors productos y servicios
+          Nuestros productos y servicios
         </p>
         <p className="text-gray-400 max-md:text-sm">
           Producción, envasado y venta de agua destilada , bidestilada y

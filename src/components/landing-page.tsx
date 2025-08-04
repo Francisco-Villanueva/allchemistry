@@ -1,4 +1,3 @@
-import Logo from "@/assets/logo.png";
 import { BadgeCheck, HandHelping, Handshake, ListOrdered } from "lucide-react";
 
 const listItems = [
@@ -12,9 +11,9 @@ export function LandingPage() {
     <div className="   w-full h-full flex max-md:flex-col   justify-center  items-center  gap-8 container mx-auto ">
       <section className=" text-white w-1/2 min-w-1/2  flex justify-center items-center ">
         <img
-          src={Logo}
+          src={"/logo.png"}
           alt="allchemistry-logo"
-          className="w-[30vw] max-md:w-full object-cover  "
+          className="w-[40vw] max-md:w-full object-cover  "
         />
       </section>
       <section className=" text-white    flex flex-col max-md:text-center gap-10  max-md:w-[90%]">
