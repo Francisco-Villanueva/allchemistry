@@ -32,13 +32,14 @@ const ProductCard = ({ product }: { product: Product }) => {
 
       <Sheet>
         <SheetTrigger asChild>
-          <Button>
+          <Button className="m-1">
+            Ver más
             <ArrowLeftFromLine />
           </Button>
         </SheetTrigger>
         <SheetContent>
           <SheetHeader></SheetHeader>
-          <section className=" flex-1 space-y-8  p-8 text-gray-800">
+          <section className=" flex-1 space-y-8 max-h-full overflow-auto  p-8 text-gray-800">
             <div className="flex flex-col gap-4 jusce items-start  ">
               <p className="text-2xl uppercase font-bold">{product.title}</p>
               <p className="text-sm">{product.description}</p>

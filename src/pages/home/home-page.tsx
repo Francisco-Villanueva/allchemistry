@@ -6,6 +6,7 @@ import { Footer } from "../../components/footer";
 import { AboutUs } from "./components/about-us";
 import { FaqSection } from "@/components/faq-questions";
 import { LandingPage } from "@/components/landing-page";
+import { WorkWithUs } from "./components/work-with-us";
 function SectionPage({
   children,
   id,
@@ -18,7 +19,7 @@ function SectionPage({
   return (
     <section
       id={id}
-      className={` ${className}  min-h-[100vh] w-full flex justify-center items-center   `}
+      className={` ${className}  min-h-[100vh] w-full  flex justify-center items-center   `}
     >
       {children}
     </section>
@@ -45,28 +46,36 @@ export function HomePage() {
         id="about"
         className="bg-gradient-to-b from-gray-700 to-gray-800 pt-[10vh]"
       >
-        <div className="  size-full   container mx-auto   ">
+        <div className="  size-full max-md:w-[95%] max-md:mx-auto    container mx-auto   ">
           <AboutUs />
         </div>
       </SectionPage>
 
       <SectionPage
         id="products"
-        className="bg-gradient-to-b from-gray-800 to-gray-900 pt-[10vh]"
+        className="bg-gradient-to-b from-gray-800 to-gray-900 pt-[10vh] "
       >
-        <div className="    size-full    container mx-auto ">
+        <div className="    size-full max-md:w-[95%] max-md:mx-auto  container mx-auto ">
           <ProductList />
         </div>
       </SectionPage>
+
       <section
         id="faq"
         className=" min-h-[50vh] bg-gradient-to-b from-gray-900 to-gray-950  pt-[10vh] "
       >
-        <div className="   flex-grow  size-full    container mx-auto   ">
+        <div className="   flex-grow  size-full   max-md:w-[95%] max-md:mx-auto   container mx-auto   ">
           <FaqSection />
         </div>
       </section>
-
+      <section
+        id="work-with-us"
+        className="    bg-gradient-to-b from-gray-900 to-gray-950  py-[10vh] "
+      >
+        <div className="    size-full flex items-center justify-center     container mx-auto ">
+          <WorkWithUs />
+        </div>
+      </section>
       <Footer />
     </section>
   );

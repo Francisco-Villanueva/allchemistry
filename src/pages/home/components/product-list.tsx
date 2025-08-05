@@ -3,7 +3,7 @@ import ProductCard from "./product-card";
 
 export function ProductList() {
   return (
-    <div className="  w-full  h-full  flex flex-col gap-20  ">
+    <div className="  w-full h-full  flex flex-col gap-20  ">
       <section className="w-full text-center space-y-2">
         <p className="text-6xl max-md:text-4xl uppercase font-anton ">
           Nuestros productos y servicios
