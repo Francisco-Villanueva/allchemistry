@@ -62,7 +62,7 @@ export function HomePage() {
 
       <section
         id="faq"
-        className=" min-h-[50vh] bg-gradient-to-b from-gray-900 to-gray-950  pt-[10vh] "
+        className=" min-h-[50vh] bg-gradient-to-b from-gray-900 to-gray-900  pt-[10vh] "
       >
         <div className="   flex-grow  size-full   max-md:w-[95%] max-md:mx-auto   container mx-auto   ">
           <FaqSection />

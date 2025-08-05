@@ -40,7 +40,7 @@ export const products: Product[] = [
       "Calibración de línea base de instrumentos analíticos.",
       " ⁠Dilución de productos químicos.",
     ],
-    presentations: ["5L", "10L", "20L"],
+    presentations: ["5L", "10L", "20L", "A GRANEL "],
     presentationType: "PVC",
     technical: {
       pH: "7",
@@ -70,7 +70,7 @@ export const products: Product[] = [
       "Diluciones farmacológicas y bioquímicas",
     ],
     image: ImageTridestilada,
-    presentations: ["5L", "10L", "20L"],
+    presentations: ["5L", "10L", "20L", "A GRANEL "],
     presentationType: "PVC",
     technical: {
       "Conductividad Eléctrica": "< 1.0 µS/cm",

@@ -39,7 +39,7 @@ export function WorkWithUs() {
               Trabaja con nosotros
             </h2>
             <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSe2C0arKOJrtegETzP26uiIKSL9f8_3hmftnTC8BSybn0wgNw/viewform?embedded=true"
+              src="https://docs.google.com/forms/d/e/1FAIpQLScYd_bsCmnfZBqzTsyRJKR1MJZNFDroCsktXmnaPKUfJaS21A/viewform?embedded=true"
               className="w-full h-full"
             >
               Cargando…
