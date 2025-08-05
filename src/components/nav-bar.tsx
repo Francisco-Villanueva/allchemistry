@@ -17,7 +17,7 @@ export function Navbar() {
   }, []);
 
   return (
-    <nav className="h-[8vh] w-full top-0 text-white flex justify-center items-center fixed z-4">
+    <nav className="h-[8vh] w-full top-0 text-white flex justify-center items-center fixed z-4 ">
       <div className="flex justify-between items-center container w-full">
         <img
           src={"/nav-bar.png"}

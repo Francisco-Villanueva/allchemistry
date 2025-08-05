@@ -8,7 +8,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { ArrowLeftFromLine } from "lucide-react";
+import { ArrowLeftFromLine, Cylinder, Droplets, Triangle } from "lucide-react";
 const ProductCard = ({ product }: { product: Product }) => {
   return (
     <div
@@ -39,20 +39,47 @@ const ProductCard = ({ product }: { product: Product }) => {
           </Button>
         </SheetTrigger>
         <SheetContent>
-          <SheetHeader>
-            <SheetTitle>{product.title}</SheetTitle>
-            <SheetDescription>{product.description}</SheetDescription>
-          </SheetHeader>
-          <section className=" flex-1  p-4">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum aspernatur iste nulla natus repellendus. In beatae
-              alias est quisquam? Nulla, sit? Expedita voluptates necessitatibus
-              dignissimos enim totam molestias dolorem cupiditate hic? Quas
-              dolorum nesciunt molestiae. Natus, saepe quas quisquam id
-              accusamus corrupti debitis maiores dolorem possimus ea, odio
-              nostrum itaque.
-            </p>
+          <SheetHeader></SheetHeader>
+          <section className=" flex-1 space-y-8  p-8 text-gray-800">
+            <div className="flex flex-col gap-4 jusce items-start  ">
+              <p className="text-2xl uppercase font-bold">{product.title}</p>
+              <p className="text-sm">{product.description}</p>
+              <img
+                src={product.image}
+                alt={product.title}
+                className="size-full object-cover rounded-lg"
+              />
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <div className="flex items-center gap-2 text-gray-700">
+                <Droplets className="size-5" />
+                <p className="text-lg ">Principales Usos</p>
+              </div>
+              <hr />
+              <div>
+                {product.uses.map((use) => (
+                  <div className="flex items-center gap-2 text-gray-700">
+                    <Triangle className="size-3" />
+                    <p> {use}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="flex flex-col gap-2">
+              <p className="text-lg text-gray-600">
+                Tamaños y presentaciones - {product.presentationType}
+              </p>
+              <hr />
+              <div>
+                {product.presentations.map((use) => (
+                  <div className="flex items-center gap-2 text-gray-600">
+                    <Cylinder className="size-3" />
+                    <p> {use}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </section>
         </SheetContent>
       </Sheet>

@@ -28,7 +28,7 @@ export function Footer() {
             <IntagramIcon />
           </a>
           <a
-            href="https://www.facebook.com/Allchemistry"
+            href="https://www.facebook.com/allchemistrybb/"
             target="_blank"
             className="hover:underline"
           >
