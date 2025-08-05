@@ -3,9 +3,7 @@ import type { Product } from "../../../utils/products";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { ArrowLeftFromLine, Cylinder, Droplets, Triangle } from "lucide-react";
