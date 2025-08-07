@@ -10,11 +10,11 @@ const items = [Image1, Image2, Image3, Image4, Image5, Image6, Image7];
 
 export function ProductsCarousel() {
   // Duplicamos el array varias veces para que el loop sea largo
-  const infiniteItems = [...items, ...items, ...items];
+  const infiniteItems = [...items, ...items];
 
   return (
     <div className="relative w-full overflow-hidden h-48">
-      <div className="flex animate-marquee">
+      <div className="flex animate-marquee w-[200%]">
         {infiniteItems.map((src, idx) => (
           <div
             key={idx}

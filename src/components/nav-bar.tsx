@@ -17,12 +17,16 @@ export function Navbar() {
   }, []);
 
   return (
-    <nav className="h-[8vh] w-full top-0 text-white flex justify-center items-center fixed z-4 ">
-      <div className="flex justify-between items-center container w-full">
+    <nav
+      className={`h-[8vh] w-full top-0 text-white flex justify-center items-center fixed z-4  ${
+        showLogo ? "opacity-100 backdrop-blur" : "opacity-0"
+      } `}
+    >
+      <div className="flex justify-between items-center container w-full h-full py-2">
         <img
           src={"/nav-bar.png"}
           alt="allchemistry-logo"
-          className={`w-30 object-cover transition-all duration-300 ${
+          className={`h-full aspect-square   object-cover transition-all duration-300  ${
             showLogo ? "opacity-100" : "opacity-0"
           }`}
         />

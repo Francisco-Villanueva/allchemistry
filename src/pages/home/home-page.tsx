@@ -19,7 +19,7 @@ function SectionPage({
   return (
     <section
       id={id}
-      className={` ${className}  min-h-[100vh] w-full  flex justify-center items-center   `}
+      className={` ${className}  min-h-[100vh]  h-[100vh] w-full  flex justify-center items-center   `}
     >
       {children}
     </section>
@@ -38,9 +38,11 @@ export function HomePage() {
       <Navbar />
       <SectionPage
         id="home"
-        className="bg-gradient-to-b from-70% to-100% from-black/75 to-gray-700 pt-0"
+        className="bg-gradient-to-b from-70% to-100% from-black/75 to-gray-700 pt-0 "
       >
-        <LandingPage />
+        <section className=" flex-grow  size-full ">
+          <LandingPage />
+        </section>
       </SectionPage>
       <SectionPage
         id="about"

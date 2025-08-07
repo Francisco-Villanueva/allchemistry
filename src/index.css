@@ -186,10 +186,14 @@ button:focus-visible {
 
 
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); } /* mueve la mitad del ancho */
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-marquee {
-  animation: marquee 3s linear infinite;
+  animation: marquee 10s linear infinite;
 }
