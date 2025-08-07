@@ -33,7 +33,7 @@ export function HomePage() {
         id="water-image"
         src={LandingImg}
         alt="water"
-        className="fixed top-0 left-0 opacity-100  w-full h-full object-cover  -z-10 "
+        className="absolute top-0 left-0 opacity-100  w-screen h-screen object-cover  -z-10 "
       />
       <Navbar />
       <SectionPage
@@ -78,6 +78,7 @@ export function HomePage() {
           <WorkWithUs />
         </div>
       </section>
+
       <Footer />
     </section>
   );
