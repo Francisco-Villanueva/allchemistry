@@ -18,7 +18,7 @@ export function Navbar() {
 
   return (
     <nav
-      className={`h-[8vh] w-full top-0 text-white flex justify-center items-center fixed z-4  ${
+      className={`h-[8vh] w-full top-0 text-white flex justify-center items-center px-4 fixed z-4  ${
         showLogo ? "opacity-100 backdrop-blur" : "opacity-0"
       } `}
     >
@@ -32,7 +32,9 @@ export function Navbar() {
         />
 
         <ul
-          className={`flex space-x-4 ${showLogo ? "opacity-100" : "opacity-0"}`}
+          className={`flex  space-x-4 ${
+            showLogo ? "opacity-100" : "opacity-0"
+          }`}
         >
           <li>
             <a href="#home" className="hover:underline">
