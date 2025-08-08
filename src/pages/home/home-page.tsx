@@ -19,7 +19,7 @@ function SectionPage({
   return (
     <section
       id={id}
-      className={` ${className}  min-h-[100vh]  h-[100vh] w-full  flex justify-center items-center   `}
+      className={` ${className}  min-h-[100vh]   w-full  flex justify-center items-center   `}
     >
       {children}
     </section>

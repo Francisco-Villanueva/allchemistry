@@ -10,9 +10,9 @@ import { ArrowLeftFromLine, Cylinder, Droplets, Triangle } from "lucide-react";
 const ProductCard = ({ product }: { product: Product }) => {
   return (
     <div
-      className={`flex  max-md:flex-col  h-full md:w-3/4 mx-auto  gap-4 overflow-auto  rounded-xl p- bg-gray-800 `}
+      className={`flex  max-md:flex-col  h-full md:w-3/4 mx-auto   gap-4 overflow-auto  rounded-xl  md:bg-gray-800 shadow-2xl  max-md:border border-accent-foreground`}
     >
-      <div className="flex flex-col justify-center items-center  gap-4 md:w-[250px] md:min-w-[250px] md:max-w-[250px] ">
+      <div className="flex flex-col justify-center items-center  gap-4 md:w-[250px] md:min-w-[250px] md:max-w-[250px]   w-3/4 mx-auto">
         <img
           src={product.image}
           alt={product.title}
@@ -20,10 +20,12 @@ const ProductCard = ({ product }: { product: Product }) => {
         />
       </div>
 
-      <div className={`flex-grow  flex flex-col gap-4 p-4 `}>
-        <h2 className="text-xl uppercase font-semibold">{product.title}</h2>
+      <div className={`flex-grow  flex flex-col gap-4 p-4 max-md:text-xs`}>
+        <h2 className="text-xl max-md:text-lg uppercase font-semibold">
+          {product.title}
+        </h2>
         <hr />
-        <p className="font-light">{product.description}</p>
+        <p className="font-light max-md:text-xs">{product.description}</p>
         <h4>Presentaciones:</h4>
         <p>
           {product.presentations.join(" - ")} ({product.presentationType})
@@ -32,8 +34,8 @@ const ProductCard = ({ product }: { product: Product }) => {
 
       <Sheet>
         <SheetTrigger asChild>
-          <Button className="m-1">
-            Ver más
+          <Button className="m-4 max-md:m-1 ">
+            <p className="max-md:text-xs">Ver más</p>
             <ArrowLeftFromLine />
           </Button>
         </SheetTrigger>
