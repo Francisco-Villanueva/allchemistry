@@ -18,8 +18,8 @@ export function Navbar() {
 
   return (
     <nav
-      className={`h-[8vh] w-full top-0 text-white flex justify-center items-center px-4 fixed z-4  ${
-        showLogo ? "opacity-100 backdrop-blur" : "opacity-0"
+      className={`h-[10vh] w-full top-0 text-white flex justify-center items-center px-4 fixed z-4  ${
+        showLogo ? "opacity-100 backdrop-blur-xs" : "opacity-0"
       } `}
     >
       <div className="flex justify-between items-center container w-full h-full py-2">

@@ -190,10 +190,10 @@ button:focus-visible {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 
 .animate-marquee {
-  animation: marquee 10s linear infinite;
+  animation: marquee 85s linear infinite;
 }
