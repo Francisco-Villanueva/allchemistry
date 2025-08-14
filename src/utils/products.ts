@@ -16,12 +16,12 @@ export const products: Product[] = [
     description:
       "Agua purificada obtenida por destilación y desionización. Este proceso elimina sales minerales, metales pesados y materia orgánica, logrando un agua de alta pureza.",
     uses: [
-      "⁠Análisis Colorimétricos.",
-      "⁠Equipos de Análisis Clínicos.",
+      "⁠Análisis colorimétricos.",
+      "⁠Equipos de análisis clínicos.",
       "Planchas a vapor y vaporizadores.",
       "Radiadores.",
       "⁠Autoclaves.",
-      "⁠Análisis Bromatológicos.",
+      "⁠Análisis bromatológicos.",
       "Lavado orgánico de fibra capilar..",
     ],
     presentations: ["1L", "2L", "5L", "10L", "20L", "A GRANEL "],
@@ -34,7 +34,7 @@ export const products: Product[] = [
       "Agua ultrapura obtenida mediante doble destilación. Elimina eficientemente metales pesados, microorganismos, sales y compuestos orgánicos volátiles, alcanzando una conductividad de entre 1 y 5 µS/cm.",
     uses: [
       "⁠Análisis colorimétricos más precisos.",
-      "⁠Equipos de Análisis Clínicos y Químicos.",
+      "⁠Equipos de análisis clínicos y químicos.",
       "Autoclaves de uso exigente.",
       "Análisis bromatológicos de mayor exigencia.",
       "Calibración de línea base de instrumentos analíticos.",
@@ -63,7 +63,7 @@ export const products: Product[] = [
     uses: [
       "⁠Análisis microbiológicos y cuantitativos de laboratorio.",
       "⁠Producción de alimentos sensibles y fórmulas estériles",
-      "⁠Análisis cuantitativos de Laboratorio.",
+      "⁠Análisis cuantitativos de laboratorio.",
       "Utilización en equipos médicos como CPAP o humidificadores hospitalarios",
       "Equipos nucleares o de alta precisión.",
       "⁠⁠Análisis bromatológicos de máxima exigencia",
