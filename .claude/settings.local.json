@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(powershell:*)",
+      "Bash(dir:*)",
+      "Bash(wc:*)",
+      "Bash(node --version:*)",
+      "Bash(npm:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run optimize-images:*)",
+      "Bash(npm run build:*)"
+    ]
+  }
+}

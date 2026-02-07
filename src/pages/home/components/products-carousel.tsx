@@ -15,36 +15,28 @@ import Image14 from "../../../assets/products/14.jpg";
 import Image15 from "../../../assets/products/15.jpg";
 
 const items = [
-  Image1,
-  Image2,
-  Image3,
-  Image4,
-  Image5,
-  Image6,
-  Image7,
-  Image8,
-  Image9,
-  Image10,
-  Image11,
-  Image12,
-  Image13,
-  Image14,
-  Image15,
+  Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8,
+  Image9, Image10, Image11, Image12, Image13, Image14, Image15,
 ];
 
 export function ProductsCarousel() {
-  // Duplicamos el array varias veces para que el loop sea largo
   const infiniteItems = [...items, ...items];
 
   return (
-    <div className="relative w-full overflow-hidden h-48">
+    <div className="relative w-full overflow-hidden h-48 carousel-fade">
       <div className="flex animate-marquee w-[300%]">
         {infiniteItems.map((src, idx) => (
           <div
             key={idx}
-            className="w-48 h-full flex-shrink-0 mx-4 flex items-center justify-center"
+            className="w-48 h-full flex-shrink-0 mx-3 flex items-center justify-center"
           >
-            <img src={src} alt="" className="h-40 object-cover rounded-lg" />
+            <img
+              src={src}
+              alt=""
+              loading="lazy"
+              decoding="async"
+              className="h-40 object-cover rounded-xl opacity-80 hover:opacity-100 transition-opacity duration-300"
+            />
           </div>
         ))}
       </div>

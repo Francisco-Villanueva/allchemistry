@@ -2,18 +2,21 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
-  width: 0.25rem;
-  height: 0.25rem;
+  width: 4px;
+  height: 4px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--Dark-grey, #aeb1b7);
-
-  border-radius: 6.25rem;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--Dark-grey, #5d6470);
-  border-radius: 6.25rem;
+  background-color: rgba(148, 163, 184, 0.3);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(148, 163, 184, 0.5);
 }

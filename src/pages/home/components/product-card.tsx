@@ -6,84 +6,139 @@ import {
   SheetHeader,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { ArrowLeftFromLine, Cylinder, Droplets, Triangle } from "lucide-react";
+import { ArrowRight, Cylinder, Droplets, FlaskConical, Triangle } from "lucide-react";
+
 const ProductCard = ({ product }: { product: Product }) => {
   return (
-    <div
-      className={`flex  max-md:flex-col  h-full md:w-3/4 mx-auto   gap-4 overflow-auto  rounded-xl  md:bg-gray-800 shadow-2xl  max-md:border border-accent-foreground`}
-    >
-      <div className="flex flex-col justify-center items-center  gap-4 md:w-[250px] md:min-w-[250px] md:max-w-[250px]   w-3/4 mx-auto">
-        <img
-          src={product.image}
-          alt={product.title}
-          className="size-full object-cover rounded-lg"
-        />
-      </div>
+    <div className="glass rounded-xl overflow-hidden hover-lift md:w-4/5 mx-auto">
+      <div className="flex max-md:flex-col">
+        {/* Image */}
+        <div className="md:w-[280px] md:min-w-[280px] p-4 max-md:p-3">
+          <img
+            src={product.image}
+            alt={product.title}
+            className="w-full h-full object-cover rounded-lg max-md:h-48"
+          />
+        </div>
 
-      <div className={`flex-grow  flex flex-col gap-4 p-4 max-md:text-xs`}>
-        <h2 className="text-xl max-md:text-lg uppercase font-semibold">
-          {product.title}
-        </h2>
-        <hr />
-        <p className="font-light max-md:text-xs">{product.description}</p>
-        <h4>Presentaciones:</h4>
-        <p>
-          {product.presentations.join(" - ")} ({product.presentationType})
-        </p>
-      </div>
+        {/* Content */}
+        <div className="flex-grow flex flex-col gap-4 p-6 max-md:p-4 max-md:pt-0">
+          <div className="flex items-center gap-3">
+            <FlaskConical className="size-5 text-blue-400" />
+            <h2 className="text-xl max-md:text-lg uppercase font-semibold tracking-wide">
+              {product.title}
+            </h2>
+          </div>
 
-      <Sheet>
-        <SheetTrigger asChild>
-          <Button className="m-4 max-md:m-1 ">
-            <p className="max-md:text-xs">Ver más</p>
-            <ArrowLeftFromLine />
-          </Button>
-        </SheetTrigger>
-        <SheetContent>
-          <SheetHeader></SheetHeader>
-          <section className=" flex-1 space-y-8 max-h-full overflow-auto  p-8 text-gray-800">
-            <div className="flex flex-col gap-4 jusce items-start  ">
-              <p className="text-2xl uppercase font-bold">{product.title}</p>
-              <p className="text-sm">{product.description}</p>
-              <img
-                src={product.image}
-                alt={product.title}
-                className="size-full object-cover rounded-lg"
-              />
-            </div>
+          <div className="section-divider" />
 
-            <div className="flex flex-col gap-2">
-              <div className="flex items-center gap-2 text-gray-700">
-                <Droplets className="size-5" />
-                <p className="text-lg ">Principales Usos</p>
-              </div>
-              <hr />
-              <div>
-                {product.uses.map((use) => (
-                  <div className="flex items-center gap-2 text-gray-700">
-                    <Triangle className="size-3" />
-                    <p> {use}</p>
+          <p className="text-gray-400 text-sm leading-relaxed max-md:text-xs">
+            {product.description}
+          </p>
+
+          <div className="flex items-center gap-2 text-sm text-gray-500">
+            <Cylinder className="size-3.5" />
+            <span>
+              {product.presentations.join(" · ")} ({product.presentationType})
+            </span>
+          </div>
+
+          <div className="mt-auto pt-2">
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button
+                  variant="ghost"
+                  className="text-blue-400 hover:text-blue-300 hover:bg-blue-500/10 px-0 gap-2"
+                >
+                  Ver detalles
+                  <ArrowRight className="size-4" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent>
+                <SheetHeader></SheetHeader>
+                <section className="flex-1 space-y-8 max-h-full overflow-auto p-8 text-gray-800">
+                  <div className="flex flex-col gap-4 items-start">
+                    <div className="flex items-center gap-3">
+                      <FlaskConical className="size-6 text-blue-600" />
+                      <p className="text-2xl uppercase font-bold">
+                        {product.title}
+                      </p>
+                    </div>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {product.description}
+                    </p>
+                    <img
+                      src={product.image}
+                      alt={product.title}
+                      className="w-full object-cover rounded-xl"
+                    />
                   </div>
-                ))}
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <p className="text-lg text-gray-600">
-                Tamaños y presentaciones - {product.presentationType}
-              </p>
-              <hr />
-              <div>
-                {product.presentations.map((use) => (
-                  <div className="flex items-center gap-2 text-gray-600">
-                    <Cylinder className="size-3" />
-                    <p> {use}</p>
+
+                  <div className="flex flex-col gap-3">
+                    <div className="flex items-center gap-2 text-gray-800">
+                      <Droplets className="size-5 text-blue-500" />
+                      <p className="text-lg font-medium">Principales Usos</p>
+                    </div>
+                    <div className="h-px bg-gray-200" />
+                    <div className="space-y-2">
+                      {product.uses.map((use, i) => (
+                        <div
+                          key={i}
+                          className="flex items-start gap-2.5 text-gray-600"
+                        >
+                          <Triangle className="size-2.5 mt-1.5 text-blue-400 flex-shrink-0" />
+                          <p className="text-sm">{use}</p>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                ))}
-              </div>
-            </div>
-          </section>
-        </SheetContent>
-      </Sheet>
+
+                  <div className="flex flex-col gap-3">
+                    <p className="text-lg font-medium text-gray-800">
+                      Presentaciones — {product.presentationType}
+                    </p>
+                    <div className="h-px bg-gray-200" />
+                    <div className="flex flex-wrap gap-2">
+                      {product.presentations.map((pres, i) => (
+                        <span
+                          key={i}
+                          className="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-lg text-sm"
+                        >
+                          {pres}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {product.technical && (
+                    <div className="flex flex-col gap-3">
+                      <p className="text-lg font-medium text-gray-800">
+                        Especificaciones Técnicas
+                      </p>
+                      <div className="h-px bg-gray-200" />
+                      <div className="grid grid-cols-2 gap-2">
+                        {Object.entries(product.technical).map(([key, val]) => (
+                          <div
+                            key={key}
+                            className="flex flex-col p-3 bg-gray-50 rounded-lg"
+                          >
+                            <span className="text-xs text-gray-500">
+                              {key}
+                            </span>
+                            <span className="text-sm font-medium text-gray-800">
+                              {val}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </section>
+              </SheetContent>
+            </Sheet>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
